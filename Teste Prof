@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    char nome[200], pai[200], mae[200], cpf[200];
+    int idade;
+    float enem;
+
+    printf("Digite o seu nome:\n");
+    scanf(" %199[^\n]", nome);
+
+    printf("Digite sua idade:\n");
+    scanf("%d", &idade);
+
+    printf("Digite seu CPF:\n");
+    scanf(" %199[^\n]", cpf);
+
+    printf("Digite a sua nota do ENEM:\n");
+    scanf("%f", &enem);
+
+    printf("Digite o nome da sua mãe:\n");
+    scanf(" %199[^\n]", mae);
+
+    printf("Digite o nome do seu pai:\n");
+    scanf(" %199[^\n]", pai);
+
+    printf("\n===== DADOS =====\n");
+    printf("Nome: %s\n", nome);
+    printf("Idade: %d\n", idade);
+    printf("CPF: %s\n", cpf);
+    printf("Nota do Enem: %.2f\n", enem);
+    printf("Nome da mãe: %s\n", mae);
+    printf("Nome do pai: %s\n", pai);
+
+    return 0;
+}
